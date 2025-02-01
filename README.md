@@ -214,11 +214,6 @@ The figure below shows the feature importance rankings for each model:
 ![Feature Importance](feature_importance_plots.png)
 """
 
-# Append this section to README.md
-with open("README.md", "a") as f:
-    f.write(readme_text)
-
-print("Feature Importance section added to README.md")
 
 
 
