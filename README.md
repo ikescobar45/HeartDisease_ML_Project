@@ -141,13 +141,6 @@ I used GridSearchCV with 5-fold cross-validation to find the best hyperparameter
 - Boosting models (Gradient Boosting & XGBoost) excelled with fewer trees (50) and a moderate learning rate (0.1), optimizing performance without overfitting.
 
 This structured approach to model development provided a solid foundation for creating a reliable heart disease prediction model.
-"""
-
-# Optional: Save the README content to a text file
-with open("README.md", "w") as f:
-    f.write(readme_text)
-
-print("README content formatted and saved.")
 
 
 
