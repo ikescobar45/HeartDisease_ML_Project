@@ -103,7 +103,7 @@ Asymptomatic chest pain (Type 0) and flat ST slopes are associated with the high
 
 In this phase, I focused on building and optimizing machine learning models to predict heart disease. The process included data preprocessing, selecting models, training, and hyperparameter tuning.
 
-### 1. Data Preparation
+# 1. Data Preparation
 I loaded the cleaned dataset (cleaned_heart_disease_dataset.csv) and split it into features (X) and target (y). I used stratified train-test splitting to ensure balanced class distribution, with 80% for training and 20% for testing. To enhance model performance, I standardized the features using StandardScaler. The processed datasets (X_train_scaled, X_test_scaled, y_train, y_test) were saved for consistent use in model training.
 
 ### 2. Model Selection & Training
