@@ -144,8 +144,6 @@ This structured approach to model development provided a solid foundation for cr
 
 ### Evaluation Metrics
 
-readme_text = """
-### Evaluation Metrics
 
 To measure how well each model performed, I used five key classification metrics:
 
@@ -155,7 +153,7 @@ To measure how well each model performed, I used five key classification metrics
 - F1 Score: A balance between precision and recall.
 - ROC-AUC Score: Measures how well the model distinguishes between positive and negative cases.
 
-### 1. Model Performance Evaluation
+### Model Finding and Results
 Each model was tested on unseen data (X_test_scaled, y_test), and the results were recorded:
 
 | Model                 | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
@@ -169,7 +167,7 @@ Each model was tested on unseen data (X_test_scaled, y_test), and the results we
 | Gradient Boosting    | 87.78%   | 85.98%    | 92.93% | 89.32%   | 92.13%  |
 | XGBoost             | 86.67%   | 83.78%    | 93.94% | 88.57%   | 91.86%  |
 
-### 2. Model Comparison
+#### Model Comparison
 A bar chart was created to compare how each model performed across accuracy, precision, recall, and F1 score. I also plotted ROC curves to examine how well the models balance true and false positive rates which can be found in the model_development file.
 
 with open("README.md", "a") as f:
@@ -178,16 +176,23 @@ with open("README.md", "a") as f:
     f.write("![Model Performance](model_performance_comparison.png)\n")
 
 
-### 3. Key Observations
+####  Key Observations
 - **Gradient Boosting had the highest accuracy (87.78%)**, making it the strongest overall performer.
 - **XGBoost had the highest recall (93.94%)**, meaning it was the best at detecting positive cases.
 - **Logistic Regression had the best precision (86.73%)**, suggesting it made fewer false positive errors.
 - **Random Forest had the highest ROC-AUC score (93.04%)**, meaning it was very effective at distinguishing between positive and negative cases.
 
-These metrics helped determine which model would be the best choice for heart disease prediction, balancing accuracy with other performance factors.
-"""
+#### Final Model Decision
 
-### Model Finding and Results
+After comparing all models, XGBoost was chosen as the best model for predicting heart disease. It had the highest recall (93.94%), meaning it was the best at identifying actual heart disease cases. In a medical setting, recall is more important than precision because missing a case of heart disease could have serious consequences.
+
+While XGBoost’s precision (83.78%) was lower than Logistic Regression, it is a trade-off worth making since catching more positive cases is the priority. Gradient Boosting (Accuracy = 87.78%, F1 Score = 89.32%) was the next best option, offering strong accuracy and balanced performance. However, since recall is the main focus, XGBoost is the best choice.
+
+By using XGBoost, we reduce the chances of missing heart disease cases while still maintaining solid overall performance.
+
+### Feature Importance
+
+
 
 ### Future Works and Reccomendations
 
