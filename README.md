@@ -142,10 +142,48 @@ I used GridSearchCV with 5-fold cross-validation to find the best hyperparameter
 
 This structured approach to model development provided a solid foundation for creating a reliable heart disease prediction model.
 
-
-
-
 ### Evaluation Metrics
+
+readme_text = """
+### Evaluation Metrics
+
+To measure how well each model performed, I used five key classification metrics:
+
+- Accuracy: The percentage of correctly classified cases out of all cases.
+- Precision: The percentage of positive predictions that were actually correct.
+- Recall: How well the model identifies actual positive cases.
+- F1 Score: A balance between precision and recall.
+- ROC-AUC Score: Measures how well the model distinguishes between positive and negative cases.
+
+### 1. Model Performance Evaluation
+Each model was tested on unseen data (X_test_scaled, y_test), and the results were recorded:
+
+| Model                 | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|-----------------------|----------|-----------|--------|----------|---------|
+| Logistic Regression   | 85.00%   | 86.73%    | 85.86% | 86.29%   | 91.07%  |
+| K-Nearest Neighbors   | 85.56%   | 85.44%    | 88.89% | 87.13%   | 92.57%  |
+| Naïve Bayes          | 82.78%   | 86.17%    | 81.82% | 83.94%   | 90.39%  |
+| Support Vector Machine | 86.67%  | 85.71%    | 90.91% | 88.24%   | 92.68%  |
+| Decision Tree        | 82.22%   | 84.54%    | 82.83% | 83.67%   | 87.53%  |
+| Random Forest        | 86.11%   | 84.91%    | 90.91% | 87.80%   | 93.04%  |
+| Gradient Boosting    | 87.78%   | 85.98%    | 92.93% | 89.32%   | 92.13%  |
+| XGBoost             | 86.67%   | 83.78%    | 93.94% | 88.57%   | 91.86%  |
+
+### 2. Model Comparison
+A bar chart was created to compare how each model performed across accuracy, precision, recall, and F1 score. I also plotted ROC curves to examine how well the models balance true and false positive rates.
+
+### 3. Key Observations
+- **Gradient Boosting had the highest accuracy (87.78%)**, making it the strongest overall performer.
+- **XGBoost had the highest recall (93.94%)**, meaning it was the best at detecting positive cases.
+- **Logistic Regression had the best precision (86.73%)**, suggesting it made fewer false positive errors.
+- **Random Forest had the highest ROC-AUC score (93.04%)**, meaning it was very effective at distinguishing between positive and negative cases.
+- A feature importance analysis showed that ST_Slope, Cholesterol, and Age were among the most influential factors in predicting heart disease.
+
+These metrics helped determine which model would be the best choice for heart disease prediction, balancing accuracy with other performance factors.
+"""
+
+
+
 
 ### Model FInding and Results
 
