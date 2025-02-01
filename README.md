@@ -5,7 +5,7 @@
 ### Executive Summary
 
 #### Overview and Goals
-This project focuses on using machine learning to predict heart disease based on medical data. By training and evaluating four models (Logistic Regression, Support Vector Machine, Random Forest, and Gradient Boosting), the goal is to identify which model performs the best in classifying individuals as having heart disease or not. Additionally, the project analyzes feature importance to determine the factors that contribute most to accurate predictions.
+This project focuses on using machine learning to predict heart disease based on medical data. By training and evaluating eight models (Logistic Regression, Support Vector Machine, Random Forest,Gradient Boosting, Naives Bayes, Decision Trees, KNN and XGboost), the goal is to identify which model performs the best in classifying individuals as having heart disease or not. Additionally, the project analyzes feature importance to determine the factors that contribute most to accurate predictions.
 
 #### Why It Matters (Rationale)
 Heart disease is a leading cause of illness and death worldwide. Early detection can save lives by enabling timely treatment and lifestyle changes. This project demonstrates how machine learning can assist in identifying individuals at risk, offering a tool that complements traditional diagnostic methods.
@@ -177,34 +177,17 @@ with open("README.md", "a") as f:
     f.write("Below is a visual comparison of the model performance across different metrics:\n\n")
     f.write("![Model Performance](model_performance_comparison.png)\n")
 
-with open("README.md", "a") as f:
-    f.write("\n\n![ROC Curves](roc_curves(1).png)\n")
-
-
-
-
-
-
-
-
-
-
-
 
 ### 3. Key Observations
 - **Gradient Boosting had the highest accuracy (87.78%)**, making it the strongest overall performer.
 - **XGBoost had the highest recall (93.94%)**, meaning it was the best at detecting positive cases.
 - **Logistic Regression had the best precision (86.73%)**, suggesting it made fewer false positive errors.
 - **Random Forest had the highest ROC-AUC score (93.04%)**, meaning it was very effective at distinguishing between positive and negative cases.
-- A feature importance analysis showed that ST_Slope, Cholesterol, and Age were among the most influential factors in predicting heart disease.
 
 These metrics helped determine which model would be the best choice for heart disease prediction, balancing accuracy with other performance factors.
 """
 
-
-
-
-### Model FInding and Results
+### Model Finding and Results
 
 ### Future Works and Reccomendations
 
