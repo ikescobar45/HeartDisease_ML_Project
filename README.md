@@ -172,11 +172,14 @@ Each model was tested on unseen data (X_test_scaled, y_test), and the results we
 ### 2. Model Comparison
 A bar chart was created to compare how each model performed across accuracy, precision, recall, and F1 score. I also plotted ROC curves to examine how well the models balance true and false positive rates.
 
-
+# Append the model performance graph to README.md
 with open("README.md", "a") as f:
     f.write("\n\n### Model Performance Graph\n")
     f.write("Below is a visual comparison of the model performance across different metrics:\n\n")
-    f.write("![Model Performance](model_performance_comparison.png)\n")
+    f.write("![Model Performance](model_performance_comparison.png)\n")  # Correct Markdown image syntax
+
+print("Model performance graph added to README.md")
+
 
 
 
