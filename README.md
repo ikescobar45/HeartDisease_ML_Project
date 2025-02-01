@@ -254,9 +254,13 @@ You can download the following files related to this proct:
 - [Download HeartDisease_EDA.ipynb](./HeartDisease_EDA.ipynb)
 
 
-- [Download HeartDisease_Model_Evaluation.ipynb](./HeartDisease_Model_Evaluation(2).ipynb)
-- [Download HeartDisease_model_development.ipynb](./HeartDisease_model_development(2).ipynb)
+
+- [Download HeartDisease_Model_Evaluation_2.ipynb](./HeartDisease_Model_Evaluation_2.ipynb)
 """
+
+
+print("Notebook download link added to README.md")
+
 
 
 
