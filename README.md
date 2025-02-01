@@ -190,7 +190,36 @@ While XGBoost’s precision (83.78%) was lower than Logistic Regression, it is a
 
 By using XGBoost, we reduce the chances of missing heart disease cases while still maintaining solid overall performance.
 
-### Feature Importance
+
+### Feature Importance Analysis
+
+Understanding which features contribute most to heart disease prediction helps improve model performance and interpretability. Feature importance scores were extracted from tree-based models, including Random Forest, Gradient Boosting, and XGBoost. The results are shown in the figure below.
+
+### 1. Key Findings
+- ST_Slope was the most important feature across all models, showing its strong influence on heart disease prediction. Changes in ST-segment slope during exercise appear to be a critical indicator of cardiac health.
+- Chest Pain Type ranked second in importance, highlighting its role as a key diagnostic factor for heart disease.
+- Exercise-induced Angina, Oldpeak, and Max Heart Rate (MaxHR) were also among the top predictive features, reinforcing their significance in assessing cardiovascular risk.
+- Other clinical indicators like Cholesterol, Resting Blood Pressure, and Age contributed to model decisions, though their importance varied between models.
+
+### 2. Model Comparisons
+- Random Forest assigned high importance to ST_Slope and Chest Pain Type, with MaxHR and Cholesterol also contributing significantly.
+- Gradient Boosting followed a similar pattern but gave slightly more weight to Oldpeak.
+- XGBoost also highlighted ST_Slope as the most influential feature but ranked Exercise Angina and Sex higher than the other models, suggesting potential differences in how it interprets risk factors.
+
+These results confirm that physiological stress indicators and patient symptoms play a major role in predicting heart disease. The insights from feature importance rankings can help guide further research into early detection and prevention.
+
+### Feature Importance Visualization
+The figure below shows the feature importance rankings for each model:
+
+![Feature Importance](feature_importance_plots.png)
+"""
+
+# Append this section to README.md
+with open("README.md", "a") as f:
+    f.write(readme_text)
+
+print("Feature Importance section added to README.md")
+
 
 
 
