@@ -99,6 +99,50 @@ Asymptomatic chest pain (Type 0) and flat ST slopes are associated with the high
 
 ### Model Developement
 
+In this phase, I focused on building and optimizing machine learning models to predict heart disease. The process included data preprocessing, selecting models, training, and hyperparameter tuning.
+
+### 1. Data Preparation
+I loaded the cleaned dataset (`cleaned_heart_disease_dataset.csv`) and split it into features (`X`) and target (`y`). I used stratified train-test splitting to ensure balanced class distribution, with 80% for training and 20% for testing. To enhance model performance, I standardized the features using `StandardScaler`. The processed datasets (`X_train_scaled`, `X_test_scaled`, `y_train`, `y_test`) were saved for consistent use in model training.
+
+### 2. Model Selection & Training
+I implemented and trained eight different models to compare their performance:
+
+- **Logistic Regression**
+- **K-Nearest Neighbors (KNN)**
+- **Naïve Bayes**
+- **Support Vector Machine (SVM)**
+- **Decision Tree**
+- **Random Forest**
+- **Gradient Boosting**
+- **XGBoost**
+
+Each model was initially trained on `X_train_scaled` and `y_train` with default settings before moving on to tuning.
+
+### 3. Hyperparameter Tuning
+I used `GridSearchCV` with 5-fold cross-validation to find the best hyperparameters for each model. The optimal parameters were:
+
+| Model                 | Best Parameters                             |
+|-----------------------|--------------------------------------------|
+| Logistic Regression   | C = 0.1                                    |
+| K-Nearest Neighbors   | n_neighbors = 7                            |
+| Naïve Bayes          | No tuning needed                           |
+| SVM                  | C = 1, Kernel = RBF                        |
+| Decision Tree        | max_depth = 5                              |
+| Random Forest        | n_estimators = 200, max_depth = 10         |
+| Gradient Boosting    | n_estimators = 50, learning_rate = 0.1     |
+| XGBoost              | n_estimators = 50, learning_rate = 0.1     |
+
+### 4. Key Takeaways
+- Regularization (`C=0.1`) improved Logistic Regression, helping to prevent overfitting.
+- KNN performed best with `k=7`, striking a balance between bias and variance.
+- Depth constraints were essential for tree-based models—Decision Tree (`max_depth=5`) and Random Forest (`max_depth=10`).
+- Boosting models (Gradient Boosting & XGBoost) excelled with fewer trees (`50`) and a moderate learning rate (`0.1`), optimizing performance without overfitting.
+
+This structured approach to model development provided a solid foundation for creating a reliable heart disease prediction model.
+"""
+
+
+
 ### Evaluation Metrics
 
 ### Model FInding and Results
