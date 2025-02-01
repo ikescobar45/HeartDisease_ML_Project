@@ -172,6 +172,15 @@ Each model was tested on unseen data (X_test_scaled, y_test), and the results we
 ### 2. Model Comparison
 A bar chart was created to compare how each model performed across accuracy, precision, recall, and F1 score. I also plotted ROC curves to examine how well the models balance true and false positive rates.
 
+
+with open("README.md", "a") as f:
+    f.write("\n\n### Model Performance Graph\n")
+    f.write("Below is a visual comparison of the model performance across different metrics:\n\n")
+    f.write("![Model Performance](model_performance_comparison.png)\n")
+
+
+
+
 ### 3. Key Observations
 - **Gradient Boosting had the highest accuracy (87.78%)**, making it the strongest overall performer.
 - **XGBoost had the highest recall (93.94%)**, meaning it was the best at detecting positive cases.
