@@ -170,7 +170,7 @@ Each model was tested on unseen data (X_test_scaled, y_test), and the results we
 | XGBoost             | 86.67%   | 83.78%    | 93.94% | 88.57%   | 91.86%  |
 
 ### 2. Model Comparison
-A bar chart was created to compare how each model performed across accuracy, precision, recall, and F1 score. I also plotted ROC curves to examine how well the models balance true and false positive rates.
+A bar chart was created to compare how each model performed across accuracy, precision, recall, and F1 score. I also plotted ROC curves to examine how well the models balance true and false positive rates which can be found in the model_development file.
 
 with open("README.md", "a") as f:
     f.write("\n\n### Model Performance Graph\n")
