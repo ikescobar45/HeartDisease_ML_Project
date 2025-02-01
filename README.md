@@ -253,6 +253,11 @@ You can download the following files related to this proct:
  pynb)
 - [Download HeartDisease_EDA.ipynb](./HeartDisease_EDA.ipynb)
 
+- [Download HeartDisease_model_development.ipynb](./HeartDisease_model_development.ipynb)
+- [Download HeartDisease_Model_Evaluation.ipynb](./HeartDisease_Model_Evaluation.ipynb)
+
+
+
   
 
 
