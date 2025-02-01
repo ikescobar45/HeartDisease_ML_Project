@@ -215,14 +215,33 @@ The figure below shows the feature importance rankings for each model:
 """
 
 
+### Future Work and Recommendations
 
+This project can be improved in several ways, including better data, stronger models, and real-world applications.
 
+### 1. Better Data
+A larger and more diverse dataset could improve accuracy. Adding more clinical features, like family history and lifestyle factors, may help the model make better predictions.
 
-### Future Works and Reccomendations
+### 2. Model Enhancements
+Testing deep learning models, like neural networks, could improve performance. Using advanced hyperparameter tuning methods could also make the models more accurate.
+
+### 3. Explainability
+Adding SHAP (Shapley Additive Explanations) would help show how each feature impacts predictions, making the model easier to understand, especially for medical use.
+
+### 4. Real-World Applications
+Deploying the model in a web or mobile app would make it more useful. Integrating it with electronic health records could allow doctors to use it for real-time risk assessment.
+
+These improvements would make the model more accurate, interpretable, and practical for real-world use.
+"""
+
 
 ### Final Summary
 
-Per my learning facilitator Jessica Cervi, this initial research part of the capstone is only graded based on EDA and data cleaning. My model results will be in my final report.
+This project explored the application of machine learning for heart disease prediction by evaluating multiple classification models. The goal was to develop an accurate and interpretable model that could assist in early diagnosis. After testing several models, XGBoost was selected as the best-performing algorithm due to its high recall (93.94%), making it the most effective at identifying actual heart disease cases. Gradient Boosting emerged as the next best alternative, achieving the highest accuracy (87.78%) while maintaining a good balance between recall and precision. Feature importance analysis revealed that ST_Slope, Chest Pain Type, and Exercise-induced Angina were the most significant predictors, reinforcing the importance of physiological stress indicators and patient symptoms in cardiovascular risk assessment. Additional clinical factors, such as Oldpeak, Max Heart Rate, and Cholesterol, also played key roles, aligning with established medical research. Despite strong model performance, further improvements can be made by expanding the dataset, incorporating additional clinical variables, and experimenting with deep learning architectures. Enhancing model interpretability through SHAP values would provide better transparency, helping medical professionals understand how predictions are made. Deploying the model as a web-based tool or integrating it into electronic health record systems could increase its accessibility and real-world impact. This project highlights how machine learning can complement traditional diagnostic methods, offering a data-driven approach to early detection and risk assessment. With further refinement, predictive models like XGBoost have the potential to support clinical decision-making, improve patient outcomes, and contribute to the future of AI-assisted healthcare.
+"""
+
+
+
 
 # Heart Disease Project
 
@@ -233,6 +252,8 @@ You can download the following files related to this proct:
 [Download HeartDisease_datacleaning.ipynb](./HeartDisease_datacleaning.ipynb)
  pynb)
 - [Download HeartDisease_EDA.ipynb](./HeartDisease_EDA.ipynb)
+
+  
 
 
 
