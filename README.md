@@ -177,14 +177,8 @@ with open("README.md", "a") as f:
     f.write("Below is a visual comparison of the model performance across different metrics:\n\n")
     f.write("![Model Performance](model_performance_comparison.png)\n")
 
-
-
 with open("README.md", "a") as f:
-    f.write("\n\n### ROC Curve Comparison\n")
-    f.write("The ROC curves for all models are shown below, illustrating the trade-off between sensitivity (recall) and specificity:\n\n")
-    f.write("![ROC Curves](roc_curves(1).png)\n")  # Matches the exact filename
-
-print("ROC curve graph added to README.md")
+    f.write("\n\n![ROC Curves](roc_curves(1).png)\n")
 
 
 
